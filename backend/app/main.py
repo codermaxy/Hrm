@@ -16,6 +16,8 @@ origins = [
     "http://localhost:3000",
     "https://hrm-comapny.vercel.app",
     "https://hrm-comapny-*.vercel.app",
+    "https://hrm-wine-tau.vercel.app",
+    "https://hrm-wine-tau-*.vercel.app",
     "https://hrm-fxpn.onrender.com",
 ]
 
