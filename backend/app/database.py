@@ -2,6 +2,7 @@ import os
 import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 import certifi
+from dotenv import load_dotenv
 
 load_dotenv()
 
