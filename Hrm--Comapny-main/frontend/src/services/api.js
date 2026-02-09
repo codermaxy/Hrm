@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use Vite env variable if provided, otherwise default to local backend
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://hrm-fxpn.onrender.com/api';
 
 const api = axios.create({
     baseURL: API_URL,

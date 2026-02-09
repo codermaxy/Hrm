@@ -16,6 +16,7 @@ origins = [
     "http://localhost:3000",
     "https://hrm-comapny.vercel.app",
     "https://hrm-comapny-*.vercel.app",
+    "https://hrm-fxpn.onrender.com",
 ]
 
 app.add_middleware(
