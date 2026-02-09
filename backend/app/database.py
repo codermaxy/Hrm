@@ -1,7 +1,7 @@
 import os
 import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
-from dotenv import load_dotenv
+import certifi
 
 load_dotenv()
 
@@ -9,7 +9,8 @@ load_dotenv()
 MONGODB_URL = os.getenv("MONGODB_URL")
 DATABASE_NAME = os.getenv("DATABASE_NAME", "hrms_lite")
 
-client = AsyncIOMotorClient(MONGODB_URL)
+# Use certifi for SSL CA bundle
+client = AsyncIOMotorClient(MONGODB_URL, tlsCAFile=certifi.where())
 db = client[DATABASE_NAME]
 
 async def get_database():
